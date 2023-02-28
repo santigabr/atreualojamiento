@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alojamientos Atreu</title>
+   <link rel="shortcut icon" href="images/icon.png" alt="icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/reset.css?v=<?=$version?>">
+   <link rel="stylesheet" href="css/style.css?v=<?=$version?>">
+   <link rel="stylesheet" href="css/navbar.css?v=<?=$version?>">
+   <link rel="stylesheet" href="css/slider.css?v=<?=$version?>">
+   <link rel="stylesheet" href="css/gallery.css?v=<?=$version?>">
+   <link rel="stylesheet" href="css/ubicacion.css?v=<?=$version?>">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="header" id="header">
+      <nav class="nav container">
+          <a href="#" class="nav__logo">Alojamientos Atreu</a>
+
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">
+                          <i class='bx bx-home-alt nav__icon'></i>
+                          <span class="nav__name">Inicio</span>
+                      </a>
+                  </li>
+                  
+                  <li class="nav__item">
+                      <a href="#ubicacion" class="nav__link">
+                          <i class='bx bx-map nav__icon'></i>
+                          <span class="nav__name">Ubicacion</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#menu" class="nav__link">
+                          <i class='bx bx-food-menu nav__icon'></i>
+                          <span class="nav__name">Menu</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#alojamientos" class="nav__link">
+                          <i class='bx bx-building-house nav__icon'></i>
+                          <span class="nav__name">Alojamientos</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#reservar" class="nav__link">
+                          <i class='bx bx-message-square-detail nav__icon'></i>
+                          <span class="nav__name">Reservar</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+   
+<section class="main swiper mySwiper" id="home">
+      <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+          <img loading="lazy" src="images/img1.jpeg"  alt="mar" class="image" />
+          <div class="image-data">
+            <h2>
+              Balneario Pehuenco  <br />
+              Buenos Aires
+            </h2>
+            <a href="#ubicacion" class="button">Saber Mas</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img loading="lazy" src="images/img2.jpeg"  alt="casa" class="image" />
+          <div class="image-data">
+            <h2>
+              Alojamiento playero  <br />
+              en el bosque
+            </h2>
+            <a href="#alojamientos" class="button">Saber Mas</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img loading="lazy" src="images/img3.jpeg"  alt="comida" class="image" />
+          <div class="image-data">
+            <h2>
+              Servicio de comida <br />
+              Riquisima !!
+            </h2>
+            <a href="#menu" class="button">Ver Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+</section>
+
+<section class="ubicacion"  id="ubicacion">
+  <h2 class="titles">Ubicacion</h2>
+  <div class="subtitle">
+    <p>Ubicado en pehuen co, hermosas playas que ofrecen naturaleza y grandes extensiones de arena para disfrutar de la paz y la tranquilidad en las vacaciones de verano y de la salida y la puesta del sol en el mar. </p>
+  </div>
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12402.687846529056!2d-61.62542175560809!3d-38.99998249708223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95f2a157a53bd63b%3A0x1239090bdad7b22d!2sBalneario%20Pehu%C3%A9n-C%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1676869275333!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2 class="titles">menu</h2>
+  <div class="owl-carousel owl-theme">
+    <div>
+      <img src="images/empanadas.jpg" alt="empanadas"> 
+      <div class="details"><h2>Empanadas</h2></div>
+    </div>
+    <div> 
+      <img src="images/pizza.jpg" alt="pizza">
+      <div class="details"><h2>Pizza</h2></div>
+    </div>
+    <div> 
+      <img src="images/carne.jpg" alt="carne"> 
+      <div class="details"><h2>Carnes</h2></div>
+    </div>
+    <div> 
+      <img src="images/postres.jpg" alt="postres"> 
+      <div class="details"><h2>Postres</h2></div>
+    </div>
+  </div>
+</section>
+
+<section class="alojamientos" id="alojamientos">
+  <h2 class="titles">Alojamientos</h2>
+  <div class="subtitle">
+    <p>Nuestros alojamientos están totalmente equipados con mobiliario rústico, construidos con materiales nobles, en forma artesanal, salen de lo tradicional. Disponemos de alojamientos con capacidad desde 2 a 6 personas, hogar a leña, calefacción a leña y a gas, confortables sillones, ventanales panorámicos, mobiliario rústico artesanal, antebaño y baño completo con bañera de piedra (algunas), secador de cabello, cocina equipada con microondas, cafetera, tostadora eléctrica, DirecTV, servicio de WiFi, en el exterior parrilla, mesa, bancos, reposeras, sombrilla, etc. Para todos los alojamientos, Servicio de mucama y Servicio de comida. </p>
+  </div>
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/casa1.jpg" class="swiper-slide" alt="casa1">
+         <img src="images/casa2.jpg" class="swiper-slide" alt="casa2">
+         <img src="images/casa3.jpg" class="swiper-slide" alt="casa3">
+         <img src="images/casa4.jpg" class="swiper-slide" alt="casa4">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<section class="reservation" id="reservar">
+  <h2 class="titles">Reservar</h2>
+
+    <form action="" method="post">
+      <div class="flex">
+          <div class="box">
+            <p>DESDE</p>
+            <input type="date" name="check_in" class="input" required>
+          </div>
+          <div class="box">
+            <p>HASTA</p>
+            <input type="date" name="check_out" class="input" required>
+          </div>
+          <div class="box">
+            <p>ADULTOS</p>
+            <select name="adults" class="input" required>
+                <option value="1">1 adultos</option>
+                <option value="2">2 aadultos</option>
+                <option value="3">3 adultos</option>
+                <option value="4">4 adultos</option>
+                <option value="5">5 adultos</option>
+                <option value="6">6 adultos</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>CHICOS</p>
+            <select name="childs" class="input" required>
+                <option value="-">0 chicos</option>
+                <option value="1">1 chicos</option>
+                <option value="2">2 chicos</option>
+                <option value="3">3 chicos</option>
+                <option value="4">4 chicos</option>
+                <option value="5">5 chicos</option>
+                <option value="6">6 chicos</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>HABITACIONES</p>
+            <select name="rooms" class="input" required>
+                <option value="1">1 habitacion</option>
+                <option value="2">2 habitaciones</option>
+                <option value="3">3 habitaciones</option>
+                <option value="4">4 habitaciones</option>
+                <option value="5">5 habitaciones</option>
+                <option value="6">6 habitaciones</option>
+            </select>
+          </div>
+      </div>
+      <input type="submit" value="reservar" name="check" class="btn">
+    </form>
+</section>
+
+<footer class="footer">
+<div class="container__footer">
+    <div class="box__footer">
+        <h2>Accesos directos</h2>
+        <a href="#home">Inicio</a>
+        <a href="#ubicacion">Ubicacion</a>
+        <a href="#menu">Menu</a>
+        <a href="#alojamientos">Alojamientos</a>
+        <a href="#reservar">Reservar</a>
+    </div>
+    <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="https://www.instagram.com/estudioehe" target="_BLANK"><i class="fab fa-instagram-square"></i> Instagram</a>
+    </div>
+    <div class="box__footer">
+        <h2>Contacto</h2>
+        <a href="" type="phone">+542994087116</a>
+        <a href="mailto:arquitectogabrilco@gmail.com" target="_BLANK">arquitectogabrilco@gmail.com</a>
+    </div>
+</div>
+<div class="credit">&copy; copyright @ 2023 by Santino Gabrilco | todos los derechos reservados!</div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".gallery-slider", {
+          loop:true,
+          effect: "coverflow",
+          slidesPerView: "auto",
+          centeredSlides: true,
+          grabCursor: true,
+          coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2,
+              slideShadows: true,
+          },
+          pagination: {
+              el: ".swiper-pagination",
+            },
+      });
+      var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            nav:true,
+            margin:10,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },            
+                960:{
+                    items:3
+                },
+                1200:{
+                    items:3
+                }
+            }
+      });
+      owl.on('mousewheel', '.owl-stage', function (e) {
+          if (e.deltaY>0) {
+              owl.trigger('next.owl');
+          } else {
+              owl.trigger('prev.owl');
+          }
+          e.preventDefault();
+      });
+</script>
+
+
+
+</body>
+</html>

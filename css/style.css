@@ -1,0 +1,202 @@
+:root{
+   --main-color:#2B1103;
+	--color-mani:#504141;
+   --sub-color:#85601d;
+   --white:#d4eefc;
+	--amarillo-raro: #F2AD08;
+	--white-segundo: rgb(184, 184, 184);
+	--color-esqueleto:#ccd6d6;
+	--colorete: #332929;
+}
+
+.menu{
+   padding-bottom: 45px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.menu h2{
+   padding-bottom: 30px;
+}
+
+.owl-carousel img{
+   opacity: 0.5;
+   width: 400px;
+   height: 400px;
+   width: 100%;
+}
+
+.details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--white);
+	width: 100%;
+	height: 100%;
+}
+
+.details h2{
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin-top: 200px;
+	transition: 0.6s;
+	transition-property: transform;
+	line-height: 1.5;
+	color: var(--white);
+}
+
+.owl-carousel span{
+   font-size: 30px;
+}
+
+
+/*Reservation*/
+.reservation{
+	padding-bottom: 15rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.reservation h2{
+	padding-bottom: 30px;
+}
+
+.reservation form{
+   border:.1rem solid var(--white);
+   padding: 2rem;
+}
+
+.reservation form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}
+
+.reservation form .flex .box{
+   flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p{
+   font-size: 1.7rem;
+   color: var(--white);
+}
+
+.reservation form .flex .box .input{
+   padding: 1rem 0;
+   margin: 1rem 0;
+   border-bottom:.1rem solid var(--white);
+   color: var(--white-segundo);
+	font-weight: 600;
+   font-size: 1.7rem;
+   width: 100%;
+}
+
+.reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+   filter: invert(1);
+}
+
+.btn{
+   display: inline-block;
+   cursor: pointer;
+   padding: 1rem 3rem;
+   border:.1rem solid var(--white);
+   font-size: 1.7rem;
+   color: var(--white);
+   text-align: center;
+   text-transform: capitalize;
+   transition: .2s linear;
+   margin-top: 1rem;
+   background-color: var(--color-main);
+}
+
+.btn:hover{
+   border-radius: 5rem;
+   background-color: var(--amarillo-raro);
+   color: white;
+}
+
+.footer{
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+.footer .credit{
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+   color: var(--white);
+   background-color: var(--colorete);
+   font-size: 1.7rem;
+	line-height: 1.5;
+}
+
+footer{
+   width: 100%;
+   background-size: cover;
+   background-color: var(--color-mani);
+	padding-bottom: 6rem;
+   /*background-color: #d0f0f8;
+   -webkit-mask-image: url("../Images/background-footer.svg");
+   mask-image: url("../Images/background-footer.svg");
+   -webkit-mask-size: cover;
+   mask-size: cover;*/
+}
+
+.container__footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+	max-width: 1200px;
+   margin: auto;
+   margin-top: 5px;
+	padding-bottom: 45px;
+}
+
+.box__footer{
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+}
+
+.box__footer h2{
+	font-size: 1.5rem;
+   margin-bottom: 30px;
+   color: var(--color-esqueleto);
+   font-weight: 700;
+}
+
+.box__footer a{
+   margin-top: 10px;
+   color: var(--white);
+   font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.box__footer a:hover{
+   opacity: 0.8;
+}
+
+.box__footer a .fab{
+   font-size: 20px;
+   color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+   .menu{
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+	.reservation{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.footer{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+ }

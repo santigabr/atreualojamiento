@@ -1,0 +1,54 @@
+:root{
+   --main-color:#2B1103;
+   --sub-color:#DCC69C;
+   --white:#d4eefc;
+   --border:.1rem solid rgba(220, 198, 156, .3);
+}
+
+.alojamientos{
+   padding-left: 120px;
+   padding-right: 120px;
+   padding-bottom: 45px;
+}
+
+.alojamientos .subtitle p{
+   padding-bottom: 30px;
+}
+
+.alojamientos img{
+   height: 40rem;
+   width: 60rem;
+   border-radius: .5rem;
+   object-fit: cover;
+   margin-bottom: 4rem;
+   user-select: none;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+   bottom: 0;
+}
+
+.swiper-pagination-bullet{
+   background-color: var(--sub-color);
+}
+
+.swiper-pagination-bullet-active{
+   background-color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+   .alojamientos{
+      padding-right: 10px;
+      padding-left: 10px;
+   }
+}
+
+@media (max-width:450px){
+
+   .alojamientos img{
+      height: 25rem;
+      width: 30rem;
+   }
+
+}
+   
